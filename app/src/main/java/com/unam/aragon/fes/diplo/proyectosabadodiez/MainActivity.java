@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button miBoton;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                textoVista.setText("Hola GitHub");
+                Toast.makeText(MainActivity.this,
+                        "Se cambio el mensaje  ",Toast.LENGTH_SHORT).show();
 
             }
         });
